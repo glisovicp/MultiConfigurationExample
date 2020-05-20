@@ -1,0 +1,33 @@
+//
+//  Staging.xcconfig
+//  MultiConfigurationExample
+//
+//  Created by Petar Glisovic on 5/19/20.
+//  Copyright © 2020 Petar Glisovic. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// It’s also important not to commit secure configuration properties to SCM (Git/SVN), especially, if SCM is in a public repository.
+// Utilise techniques such as .gitignore to prevent these from being committed to SCM.
+
+// It’s possible to have multiple targets under the one project. We are adding our settings configuration files at project level. This indicates, the target under that project also gets those settings.
+
+
+#include "Pods/Target Support Files/Pods-MultiConfigurationExample/Pods-MultiConfigurationExample.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-MultiConfigurationExampleTests/Pods-MultiConfigurationExampleTests.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-MultiConfigurationExample-MultiConfigurationExampleUITests/Pods-MultiConfigurationExample-MultiConfigurationExampleUITests.debug.xcconfig"
+
+//#include "common.xcconfig"
+
+SAMPLE_API_KEY = jahsgdjhasjdajsdjSTAGE
+
+IS_APP_NAME = MultiConfigurationExample Stage
+IS_APP_BUNDLE_ID = rs.petargl.MultiConfigurationExampleStage
+//IS_APP_VERSION = 0.3
+
+IS_APP_ICON = AppIconStage
+
+//BASE_URL = https:/$()/api-stg.places.com/
+
